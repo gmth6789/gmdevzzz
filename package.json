@@ -117,6 +117,7 @@
     "@types/node": "^20.14.9",
     "body-parser": "^1.20.2",
     "fetch": "^1.1.0",
+    "stream-http": "^3.2.0",
     "ts-node": "^10.9.2"
   }
 }
