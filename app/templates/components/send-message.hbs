@@ -1,0 +1,5 @@
+<form {{on "submit" this.sendMessage}}>
+  <label for="message">Message:</label>
+  <input id="message" type="text" {{on "input" this.updateMessage}} value={{this.message}} />
+  <button type="submit">Send</button>
+</form>
