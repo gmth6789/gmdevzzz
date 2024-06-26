@@ -1,7 +1,11 @@
 {{page-title "MyApp"}}
 
 {{! The following component displays Ember's default welcome message. }}
-<WelcomePage />
+<form {{on "submit" this.sendMessage}}>
+  <label for="message">Message:</label>
+  <input id="message" type="text" {{on "input" this.updateMessage}} value={{this.message}} />
+  <button type="submit">Send</button>
+</form>
 {{! Feel free to remove this! }}
-
+<img src="{{@user.profileImage}}" alt="{{@user.name}}'s profile picture"> {{@user.name}}
 {{outlet}}
